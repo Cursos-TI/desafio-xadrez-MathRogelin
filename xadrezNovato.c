@@ -96,7 +96,7 @@ int main() {
         printf(" 4 - Diagonal Inferior Direita\n");
         printf("Digite aqui: ");
         scanf("%d", &direcao);
-
+        // variavel para inicialização
         int posicaoBispo = 1;
 
         switch (direcao){
@@ -147,7 +147,7 @@ int main() {
         printf(" 4 - Baixo\n");
         printf("Digite aqui: ");
         scanf("%d", &direcao);
-
+        // variavel para inicialização
         int posicaoRainha = 1;
 
         switch (direcao){
