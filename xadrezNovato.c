@@ -37,7 +37,7 @@ int main() {
     printf(" 2 - Bispo\n");
     printf(" 3 - Rainha\n");
     printf("Digite aqui: ");
-    scanf("%d\n\n", &escolha);
+    scanf("%d", &escolha);
 
     switch (escolha){
     case 1:
@@ -47,7 +47,8 @@ int main() {
         printf(" 2 - Direita\n");
         printf(" 3 - Cima\n");
         printf(" 4 - Baixo\n");
-        scanf("%d\n\n", &direcao);
+        printf("Digite aqui: ");
+        scanf("%d", &direcao);
 
         switch (direcao){
             case 1:
@@ -93,7 +94,8 @@ int main() {
         printf(" 2 - Diagonal Superior Direita\n");
         printf(" 3 - Diagonal Inferior Esquerda\n");
         printf(" 4 - Diagonal Inferior Direita\n");
-        scanf("%d\n\n", &direcao);
+        printf("Digite aqui: ");
+        scanf("%d", &direcao);
 
         int posicaoBispo = 1;
 
@@ -137,7 +139,53 @@ int main() {
         }
         break;
     case 3:
-        /* code */
+        // usando a estrutura while para Bispo
+        printf("Escolha para onde quer movimentar a Rainha:\n");
+        printf(" 1 - Esquerda\n");
+        printf(" 2 - Direita\n");
+        printf(" 3 - Cima\n");
+        printf(" 4 - Baixo\n");
+        printf("Digite aqui: ");
+        scanf("%d", &direcao);
+
+        int posicaoRainha = 1;
+
+        switch (direcao){
+            case 1:
+                do{
+                    printf("Esquerda\n");
+                    posicaoRainha++;
+                }while (posicaoRainha <= 5);
+                
+                break;
+            case 2:
+                do{
+                    printf("Direita\n");
+                    posicaoRainha++;
+                }while (posicaoRainha <= 5);
+
+                break;
+            case 3:
+
+                do{
+                    printf("Cima\n");
+                    posicaoRainha++;
+                }while (posicaoRainha <= 5);
+
+                break;
+            case 4:
+
+                do{
+                    printf("Baixo\n");
+                    posicaoRainha++;
+                }while (posicaoRainha <= 5);
+
+                break;
+            
+            default:
+                printf("Valor Invalido, nenhum movimento...");
+                break;
+        }
         break;
     default:
         printf("Escolha invalida");
