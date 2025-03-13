@@ -50,43 +50,91 @@ int main() {
         scanf("%d\n\n", &direcao);
 
         switch (direcao){
-        case 1:
+            case 1:
 
-            for (int e = 1; e <= 5; e++){
-                printf("Esquerda\n");
-            }
+                for (int e = 1; e <= 5; e++){
+                    printf("Esquerda\n");
+                }
+                
+                break;
+            case 2:
+
+                for (int d = 1; d <= 5; d++){
+                    printf("Direita\n");
+                }
+
+                break;
+            case 3:
+
+                for (int c = 1; c <= 5; c++){
+                    printf("Cima\n");
+                }
+
+                break;
+            case 4:
+
+                for (int b = 1; b <= 5; b++){
+                    printf("Baixo\n");
+                }
+
+                break;
             
-            break;
-        case 2:
-
-            for (int d = 1; d <= 5; d++){
-                printf("Direita\n");
+            default:
+                printf("Valor Invalido, nenhum movimento...");
+                break;
             }
-
-            break;
-        case 3:
-
-            for (int c = 1; c <= 5; c++){
-                printf("Cima\n");
-            }
-
-            break;
-        case 4:
-
-            for (int b = 1; b <= 5; b++){
-                printf("Baixo\n");
-            }
-
-            break;
-        
-        default:
-            printf("Valor Invalido, nenhum movimento...");
-            break;
-        }
 
         break;
+
     case 2:
-        /* code */
+        // usando a estrutura while para Bispo
+        printf("Escolha para onde quer movimentar o Bispo:\n");
+        printf(" 1 - Diagonal Superior Esquerda\n");
+        printf(" 2 - Diagonal Superior Direita\n");
+        printf(" 3 - Diagonal Inferior Esquerda\n");
+        printf(" 4 - Diagonal Inferior Direita\n");
+        scanf("%d\n\n", &direcao);
+
+        int posicaoBispo = 1;
+
+        switch (direcao){
+            case 1:
+
+                while (posicaoBispo <= 5){
+                    printf("Esquerda, Cima\n");
+                    posicaoBispo++;
+                }
+                
+                break;
+            case 2:
+
+                while (posicaoBispo <= 5){
+                    printf("Direita, Cima\n");
+                    posicaoBispo++;
+                }
+
+                break;
+            case 3:
+
+                while (posicaoBispo <= 5){
+                    printf("Esquerda, Baixo\n");
+                    posicaoBispo++;
+                }
+
+                break;
+            case 4:
+
+                while (posicaoBispo <= 5){
+                    printf("Direita, Baixo\n");
+                    posicaoBispo++;
+                }
+
+                break;
+            
+            default:
+                printf("Valor Invalido, nenhum movimento...");
+                break;
+        }
         break;
     case 3:
         /* code */
