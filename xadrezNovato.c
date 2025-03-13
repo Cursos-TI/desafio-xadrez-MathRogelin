@@ -28,5 +28,72 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
+    int escolha, direcao;
+
+    printf("Desafio Movimentacao de Pecas de Xadres\n");
+    printf("======================================================\n\n");
+    printf("Escolha uma peca para movimentar digitando seu numero:\n");
+    printf(" 1 - Torre\n");
+    printf(" 2 - Bispo\n");
+    printf(" 3 - Rainha\n");
+    printf("Digite aqui: ");
+    scanf("%d\n\n", &escolha);
+
+    switch (escolha){
+    case 1:
+        // usando a estrutura for para Torre
+        printf("Escolha para onde quer movimentar a torre:\n");
+        printf(" 1 - Esquerda\n");
+        printf(" 2 - Direita\n");
+        printf(" 3 - Cima\n");
+        printf(" 4 - Baixo\n");
+        scanf("%d\n\n", &direcao);
+
+        switch (direcao){
+        case 1:
+
+            for (int e = 1; e <= 5; e++){
+                printf("Esquerda\n");
+            }
+            
+            break;
+        case 2:
+
+            for (int d = 1; d <= 5; d++){
+                printf("Direita\n");
+            }
+
+            break;
+        case 3:
+
+            for (int c = 1; c <= 5; c++){
+                printf("Cima\n");
+            }
+
+            break;
+        case 4:
+
+            for (int b = 1; b <= 5; b++){
+                printf("Baixo\n");
+            }
+
+            break;
+        
+        default:
+            printf("Valor Invalido, nenhum movimento...");
+            break;
+        }
+
+        break;
+    case 2:
+        /* code */
+        break;
+    case 3:
+        /* code */
+        break;
+    default:
+        printf("Escolha invalida");
+        break;
+    }
     return 0;
 }
