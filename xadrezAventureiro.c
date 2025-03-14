@@ -205,7 +205,7 @@ int main() {
         switch (direcao){
             case 1:
                 for (int i = 1; i <= 1; i++){
-                    while (j <= 3){
+                    while (j <= 2){
                         printf("Cima\n");
                         j++;
                     };
@@ -216,7 +216,7 @@ int main() {
                 break;
             case 2:
                 for (int i = 1; i <= 1; i++){
-                    while (j <= 3){
+                    while (j <= 2){
                         printf("Cima\n");
                         j++;
                     };
@@ -226,7 +226,7 @@ int main() {
                 break;
             case 3:
                 for (int i = 1; i <= 1; i++){
-                    while (j <= 3){
+                    while (j <= 2){
                         printf("Baixo\n");
                         j++;
                     };
@@ -236,7 +236,7 @@ int main() {
                 break;
             case 4:
                 for (int i = 1; i <= 1; i++){
-                    while (j <= 3){
+                    while (j <= 2){
                         printf("Baixo\n");
                         j++;
                     };
@@ -246,7 +246,7 @@ int main() {
                 break;
             case 5:
                 for (int i = 1; i <= 1; i++){
-                    while (j <= 3){
+                    while (j <= 2){
                         printf("Esquerda\n");
                         j++;
                     };
@@ -256,7 +256,7 @@ int main() {
                 break;
             case 6:
                 for (int i = 1; i <= 1; i++){
-                    while (j <= 3){
+                    while (j <= 2){
                         printf("Esquerda\n");
                         j++;
                     };
@@ -266,7 +266,7 @@ int main() {
                 break;
             case 7:
                 for (int i = 1; i <= 1; i++){
-                    while (j <= 3){
+                    while (j <= 2){
                         printf("Direita\n");
                         j++;
                     };
@@ -276,7 +276,7 @@ int main() {
                 break;
             case 8:
                 for (int i = 1; i <= 1; i++){
-                    while (j <= 3){
+                    while (j <= 2){
                         printf("Direita\n");
                         j++;
                     };
