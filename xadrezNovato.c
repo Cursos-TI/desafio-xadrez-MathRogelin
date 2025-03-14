@@ -155,14 +155,14 @@ int main() {
                 do{
                     printf("Esquerda\n");
                     posicaoRainha++;
-                }while (posicaoRainha <= 5);
+                }while (posicaoRainha <= 8);
                 
                 break;
             case 2:
                 do{
                     printf("Direita\n");
                     posicaoRainha++;
-                }while (posicaoRainha <= 5);
+                }while (posicaoRainha <= 8);
 
                 break;
             case 3:
@@ -170,7 +170,7 @@ int main() {
                 do{
                     printf("Cima\n");
                     posicaoRainha++;
-                }while (posicaoRainha <= 5);
+                }while (posicaoRainha <= 8);
 
                 break;
             case 4:
@@ -178,7 +178,7 @@ int main() {
                 do{
                     printf("Baixo\n");
                     posicaoRainha++;
-                }while (posicaoRainha <= 5);
+                }while (posicaoRainha <= 8);
 
                 break;
             
