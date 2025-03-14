@@ -189,7 +189,106 @@ int main() {
         }
         break;
     case 4:
-    
+        // usando as estruturas for e while para Cavalo
+        printf("Escolha para onde quer movimentar a Rainha:\n");
+        printf(" 1 - L para cima (Esquerda)\n");
+        printf(" 2 - L para cima (Direita)\n");
+        printf(" 3 - L para baixo (Esquerda)\n");
+        printf(" 4 - L para baixo (Direita)\n");
+        printf(" 5 - L para esquerda (Cima)\n");
+        printf(" 6 - L para esquerda (Baixo)\n");
+        printf(" 7 - L para direita (Cima)\n");
+        printf(" 8 - L para direita (Baixo)\n");
+        printf("Digite aqui: ");
+        scanf("%d", &direcao);
+        int j = 1;
+        switch (direcao){
+            case 1:
+                for (int i = 1; i <= 1; i++){
+                    while (j <= 3){
+                        printf("Cima\n");
+                        j++;
+                    };
+                    
+                    printf("Esquerda\n");
+                }
+                
+                break;
+            case 2:
+                for (int i = 1; i <= 1; i++){
+                    while (j <= 3){
+                        printf("Cima\n");
+                        j++;
+                    };
+                    
+                    printf("Direita\n");
+                }
+                break;
+            case 3:
+                for (int i = 1; i <= 1; i++){
+                    while (j <= 3){
+                        printf("Baixo\n");
+                        j++;
+                    };
+                    
+                    printf("Esquerda\n");
+                }
+                break;
+            case 4:
+                for (int i = 1; i <= 1; i++){
+                    while (j <= 3){
+                        printf("Baixo\n");
+                        j++;
+                    };
+                    
+                    printf("Direita\n");
+                }
+                break;
+            case 5:
+                for (int i = 1; i <= 1; i++){
+                    while (j <= 3){
+                        printf("Esquerda\n");
+                        j++;
+                    };
+                    
+                    printf("Cima\n");
+                }
+                break;
+            case 6:
+                for (int i = 1; i <= 1; i++){
+                    while (j <= 3){
+                        printf("Esquerda\n");
+                        j++;
+                    };
+                    
+                    printf("Baixo\n");
+                }
+                break;
+            case 7:
+                for (int i = 1; i <= 1; i++){
+                    while (j <= 3){
+                        printf("Direita\n");
+                        j++;
+                    };
+                    
+                    printf("Cima\n");
+                }
+                break;
+            case 8:
+                for (int i = 1; i <= 1; i++){
+                    while (j <= 3){
+                        printf("Direita\n");
+                        j++;
+                    };
+                    
+                    printf("Baixo\n");
+                }
+                break;
+            
+            default:
+                printf("Valor Invalido, nenhum movimento...");
+                break;
+        }
         break;
     default:
         printf("Escolha invalida");
