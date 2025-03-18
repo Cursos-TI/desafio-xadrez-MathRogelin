@@ -5,6 +5,7 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 // torre
+
 void movimentoEsquerdaTorre(int e){
     if( e > 5){
         return;
@@ -36,6 +37,68 @@ void movimentoBaixoTorre(int b){
     printf("Baixo\n");
     movimentoBaixoTorre( b + 1);
 };
+
+// Bispo
+
+void movimentoDiagonalEsquerdaBispo(int be) {
+    if (be >= 5) {
+        return;
+    }
+    int i = 0;  
+    while (i < 1) { // vertical
+        printf("Cima\n");
+        for (int j = 0; j < 1; j++) { // horizontal
+            printf("Esquerda\n");
+        }
+        i++; 
+    }
+    movimentoDiagonalEsquerdaBispo(be + 1); // Chamada recursiva
+}
+
+void movimentoDiagonalDireitaBispo(int bd) {
+    if (bd >= 5) {
+        return;
+    }
+    int i = 0;  
+    while (i < 1) { // vertical
+        printf("Cima\n");
+        for (int j = 0; j < 1; j++) { // horizontal
+            printf("Direita\n");
+        }
+        i++; 
+    }
+    movimentoDiagonalDireitaBispo(bd + 1); // Chamada recursiva
+}
+
+void movimentoDiagonalEsquerdaBaixoBispo(int bBe) {
+    if (bBe >= 5) {
+        return;
+    }
+    int i = 0;  
+    while (i < 1) { // vertical
+        printf("Baixo\n");
+        for (int j = 0; j < 1; j++) { // horizontal
+            printf("Esquerda\n");
+        }
+        i++; 
+    }
+    movimentoDiagonalEsquerdaBaixoBispo(bBe + 1); // Chamada recursiva
+}
+
+void movimentoDiagonalDireitaBaixoBispo(int bBd) {
+    if (bBd >= 5) {
+        return;
+    }
+    int i = 0;  
+    while (i < 1) { // vertical
+        printf("Baixo\n");
+        for (int j = 0; j < 1; j++) { // horizontal
+            printf("Direita\n");
+        }
+        i++; 
+    }
+    movimentoDiagonalEsquerdaBaixoBispo(bBd + 1); // Chamada recursiva
+}
 
 int main() {
     // Nível Novato - Movimentação das Peças
@@ -125,34 +188,22 @@ int main() {
         switch (direcao){
             case 1:
 
-                while (posicaoBispo <= 5){
-                    printf("Esquerda, Cima\n");
-                    posicaoBispo++;
-                }
+                movimentoDiagonalEsquerdaBispo(1);
                 
                 break;
             case 2:
 
-                while (posicaoBispo <= 5){
-                    printf("Direita, Cima\n");
-                    posicaoBispo++;
-                }
+                movimentoDiagonalDireitaBispo(1);
 
                 break;
             case 3:
 
-                while (posicaoBispo <= 5){
-                    printf("Esquerda, Baixo\n");
-                    posicaoBispo++;
-                }
+                movimentoDiagonalEsquerdaBaixoBispo(1);
 
                 break;
             case 4:
 
-                while (posicaoBispo <= 5){
-                    printf("Direita, Baixo\n");
-                    posicaoBispo++;
-                }
+                movimentoDiagonalDireitaBaixoBispo(1);
 
                 break;
             
