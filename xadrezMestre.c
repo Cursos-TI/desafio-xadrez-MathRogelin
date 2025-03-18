@@ -100,6 +100,60 @@ void movimentoDiagonalDireitaBaixoBispo(int bBd) {
     movimentoDiagonalEsquerdaBaixoBispo(bBd + 1); // Chamada recursiva
 }
 
+// Rainha
+
+void movimentoEsquerdaRainha(re){
+    int i = 0;
+    do{
+        if (re > 8){
+            return;
+        }
+        
+        printf("Esquerda\n");
+        i++;
+        movimentoEsquerdaRainha(re + 1);
+    }while ( i < 1);
+};
+
+void movimentoDireitaRainha(rd){
+    int i = 0;
+    do{
+        if (rd > 8){
+            return;
+        }
+        
+        printf("Direita\n");
+        i++;
+        movimentoDireitaRainha(rd + 1);
+    }while ( i < 1);
+};
+
+void movimentoCimaRainha(rc){
+    int i = 0;
+    do{
+        if (rc > 8){
+            return;
+        }
+        
+        printf("Cima\n");
+        i++;
+        movimentoCimaRainha(rc + 1);
+    }while ( i < 1);
+};
+
+void movimentoBaixoRainha(rb){
+    int i = 0;
+    do{
+        if (rb > 8){
+            return;
+        }
+        
+        printf("Baixo\n");
+        i++;
+        movimentoBaixoRainha(rb + 1);
+    }while ( i < 1);
+};
+
 int main() {
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
@@ -182,8 +236,6 @@ int main() {
         printf(" 4 - Diagonal Inferior Direita\n");
         printf("Digite aqui: ");
         scanf("%d", &direcao);
-        // variavel para inicialização
-        int posicaoBispo = 1;
 
         switch (direcao){
             case 1:
@@ -221,38 +273,24 @@ int main() {
         printf(" 4 - Baixo\n");
         printf("Digite aqui: ");
         scanf("%d", &direcao);
-        // variavel para inicialização
-        int posicaoRainha = 1;
 
         switch (direcao){
             case 1:
-                do{
-                    printf("Esquerda\n");
-                    posicaoRainha++;
-                }while (posicaoRainha <= 8);
+                movimentoEsquerdaRainha(1);
                 
                 break;
             case 2:
-                do{
-                    printf("Direita\n");
-                    posicaoRainha++;
-                }while (posicaoRainha <= 8);
+                movimentoDireitaRainha(1);
 
                 break;
             case 3:
 
-                do{
-                    printf("Cima\n");
-                    posicaoRainha++;
-                }while (posicaoRainha <= 8);
+                movimentoCimaRainha(1);
 
                 break;
             case 4:
 
-                do{
-                    printf("Baixo\n");
-                    posicaoRainha++;
-                }while (posicaoRainha <= 8);
+                movimentoBaixoRainha(1);
 
                 break;
             
