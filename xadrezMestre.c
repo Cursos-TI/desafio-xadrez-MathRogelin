@@ -4,6 +4,39 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
+// torre
+void movimentoEsquerdaTorre(int e){
+    if( e > 5){
+        return;
+    }
+    printf("Esquerda\n");
+    movimentoEsquerdaTorre( e + 1);
+};
+
+void movimentoDireitaTorre(int d){
+    if( d > 5){
+        return;
+    }
+    printf("Direita\n");
+    movimentoDireitaTorre( d + 1);
+};
+
+void movimentoCimaTorre(int c){
+    if( c > 5){
+        return;
+    }
+    printf("Cima\n");
+    movimentoCimaTorre( c + 1);
+};
+
+void movimentoBaixoTorre(int b){
+    if( b > 5){
+        return;
+    }
+    printf("Baixo\n");
+    movimentoBaixoTorre( b + 1);
+};
+
 int main() {
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
@@ -53,36 +86,25 @@ int main() {
 
         switch (direcao){
             case 1:
-
-                for (int e = 1; e <= 5; e++){
-                    printf("Esquerda\n");
-                }
+                movimentoEsquerdaTorre(1);
                 
                 break;
             case 2:
-
-                for (int d = 1; d <= 5; d++){
-                    printf("Direita\n");
-                }
+                movimentoDireitaTorre(1);
 
                 break;
             case 3:
-
-                for (int c = 1; c <= 5; c++){
-                    printf("Cima\n");
-                }
+                movimentoCimaTorre(1);
 
                 break;
             case 4:
 
-                for (int b = 1; b <= 5; b++){
-                    printf("Baixo\n");
-                }
+                movimentoBaixoTorre(1);
 
                 break;
             
             default:
-                printf("Valor Invalido, nenhum movimento...");
+                printf("Valor Invalido, nenhum movimento...\n");
                 break;
             }
 
